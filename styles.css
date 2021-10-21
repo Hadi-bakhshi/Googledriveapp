@@ -46,6 +46,8 @@ img {
 
 }
 
+/* Instruction section */
+
 .instructions{
   font-size: 1.6rem;
   width: 30%;
@@ -82,7 +84,10 @@ padding-bottom: 5px;
   text-decoration: none;
 }
 
-/* download */
+
+/* End of the instruction section */
+
+/* Download section */
 
 .download-link{
   width: 70%;
@@ -176,6 +181,8 @@ nav .slide{
 #reset:checked ~ section .content-video{
   display: block;
 }
+
+/* End of download */
 
 /* Form styles */
 
@@ -293,7 +300,7 @@ section .content{
   font-size: 1.6rem;
   font-weight: 700;
   background-color: var(--color-primary);
-  color: #9d0191;
+  color: #eee;
   padding: 5px 8px;
   border: 1px solid #eee;
   cursor: pointer;
@@ -302,4 +309,65 @@ section .content{
 .embed-code span:hover{
   font-size: 1.8rem;
 }
+.content .btn {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: var(--color-sec);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s;
+}
 
+.content .btn:hover {
+  transform: translateY(-3px);
+  background-color: var(--color-primary);
+}
+
+button.clear {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: red;
+  padding: .8rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+button.clear:hover {
+  background-color: orangered;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 775px) {
+  .main-container {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .instructions {
+      width: 100%;
+  }
+
+  .download-link {
+      width: 100%;
+      padding-bottom: 20px;
+  }
+  .download-link h1 {
+      font-size: 3rem;
+      line-height: 1;
+  }
+}
+/*  */
+@media screen and (max-width: 560px){
+  main nav label{
+    font-size: 1rem;
+    padding: 0;
+  }
+}
